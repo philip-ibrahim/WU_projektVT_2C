@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Gridwrapper {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    "he he na"
+    "in in in"
+    "a1 a1 a1"
+    "a1 a1 a1"
+    "a2 a2 a2"
+    "a2 a2 a2"
+    "a3 a3 a3"
+    "a3 a3 a3"
+
+    ;
+
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.nav {
+    grid-area: na;
+}
+
+.header {
+    grid-area: he;
+}
+
+.information {
+    grid-area: in;
+}
+
+.huvudinnehall {
+    grid-area: hu;
+}
+
+.footer {
+    grid-area: fo
+}
+
+.article1 {
+    grid-area: a1;
+}
+
+.article2 {
+    grid-area: a2;
+}
+
+.article3 {
+    grid-area: a3;
+}
+
+.article4 {
+    grid-area: a4;
+}
+
+.article5 {
+    grid-area: a5;
+}
