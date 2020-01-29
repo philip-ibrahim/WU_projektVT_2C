@@ -16,12 +16,14 @@
     "a2 a2 a2"
     "a3 a3 a3"
     "a3 a3 a3"
-
+    "a4 a4 a4"
+    "a4 a4 a4"
+    "a5 a5 a5"
+    "fo fo fo"
     ;
 
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(3, 1fr);
-
 
 }
 
@@ -38,11 +40,7 @@
 }
 
 .huvudinnehall {
-    grid-area: hu;
-}
 
-.footer {
-    grid-area: fo
 }
 
 .article1 {
@@ -63,4 +61,8 @@
 
 .article5 {
     grid-area: a5;
+}
+
+.footer {
+    grid-area: fo;
 }
