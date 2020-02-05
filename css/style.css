@@ -27,12 +27,12 @@
 
 }
 
-.nav {
-    grid-area: na;
-}
+
+
 
 .header {
     grid-area: he;
+    background: blue;
 }
 
 .information {
@@ -45,24 +45,97 @@
 
 .article1 {
     grid-area: a1;
+    background: pink;
 }
 
 .article2 {
     grid-area: a2;
+    background: green;
 }
 
 .article3 {
     grid-area: a3;
+    background: blue;
 }
 
 .article4 {
     grid-area: a4;
+    background: red;
 }
 
 .article5 {
     grid-area: a5;
+    background: purple;
 }
 
 .footer {
     grid-area: fo;
+    background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background: lightpink;
+    font-family: sans-serif;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: lightpink;
+    align-items: center;
+    width: 25%;
+}
+
+.navActive {
+    transform: translate(100vh);
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    color: rgb(223, 144, 70);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: rgb(223, 144, 70);
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
