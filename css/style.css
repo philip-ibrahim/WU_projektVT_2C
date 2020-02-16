@@ -11,19 +11,20 @@
     "he he na"
     "in in in"
     "a1 a1 a1"
-    "a1 a1 a1"
-    "a2 a2 a2"
     "a2 a2 a2"
     "a3 a3 a3"
-    "a3 a3 a3"
-    "a4 a4 a4"
     "a4 a4 a4"
     "a5 a5 a5"
+    "a6 a6 a6"
+    "a7 a7 a7"
+    "a8 a8 a8"
+    "a9 a9 a9"
+    "aa aa aa"
     "fo fo fo"
     ;
 
-    grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(13, 1fr);
 
 }
 
@@ -40,7 +41,8 @@
 }
 
 .huvudinnehall {
-
+    height: 100vh;
+    width: 100vw;
 }
 
 .article1 {
@@ -51,11 +53,13 @@
 .article2 {
     grid-area: a2;
     background: green;
+    overflow: scroll;
 }
 
 .article3 {
     grid-area: a3;
     background: blue;
+    width: 100vw;
 }
 
 .article4 {
@@ -66,6 +70,31 @@
 .article5 {
     grid-area: a5;
     background: purple;
+}
+
+.article6 {
+    grid-area: a6;
+    background: pink;
+}
+
+.article7 {
+    grid-area: a7;
+    background: blue;
+}
+
+.article8 {
+    grid-area: a8;
+    background: red;
+}
+
+.article9 {
+    grid-area: a9;
+    background: pink;
+}
+
+.article10 {
+    grid-area: aa;
+    background: green;
 }
 
 .footer {
@@ -86,7 +115,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12vh;
+    height: 13vh;
     background: lightpink;
     font-family: sans-serif;
 }
@@ -138,4 +167,75 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+
+
+#teslamodels {
+    display: block;
+    height: 20vh;
+    width: auto;
+    padding: 5px;
+    margin-left:20%
+}
+
+#teslamodelx {
+    display: block;
+    height: 20vh;
+    width: auto;
+    padding: 5px;
+    margin-left: 20%;
+}
+
+#teslamodel3 {
+    display: block;
+    height: 20vh;
+    width: auto;
+    padding: 5px;
+    margin-left: 20%;
+}
+
+#teslamodely {
+    display: block;
+    height: 20vh;
+    width: auto;
+    padding: 5px;
+    margin-left: 20%;
+}
+
+#teslaroadster {
+    display: block;
+    height: 20vh;
+    width: auto;
+    padding: 5px;
+    margin-left: 20%;
+}
+
+
+
+
+
+.section1 {
+    padding: 10px;
+}
+
+.section2 {
+    padding: 10px;
+}
+
+.section3 {
+    padding: 10px;
+}
+
+.section4 {
+    padding: 10px;
+}
+
+.section5 {
+    padding: 10px;
 }
