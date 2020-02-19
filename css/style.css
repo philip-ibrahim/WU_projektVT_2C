@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,22 +9,22 @@
     height: 100vh;
     width: 100vw;
     grid-template-areas: 
-    "he he na"
-    "in in in"
-    "a1 a1 a1"
-    "a2 a2 a2"
-    "a3 a3 a3"
-    "a4 a4 a4"
-    "a5 a5 a5"
-    "a6 a6 a6"
-    "a7 a7 a7"
-    "a8 a8 a8"
-    "a9 a9 a9"
-    "aa aa aa"
-    "fo fo fo"
+    "he he he na"
+    "in in in in"
+    "a1 a1 a1 a1"
+    "a2 a2 a2 a2"
+    "a3 a3 a3 a3"
+    "a4 a4 a4 a4"
+    "a5 a5 a5 a5"
+    "a6 a6 a6 a6"
+    "a7 a7 a7 a7"
+    "a8 a8 a8 a8"
+    "a9 a9 a9 a9"
+    "aa aa aa aa"
+    "fo fo fo fo"
     ;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(13, 1fr);
 
 }
@@ -41,8 +42,8 @@
 }
 
 .huvudinnehall {
-    height: 100vh;
-    width: 100vw;
+        height: 100vh;
+        width: 100vw;
 }
 
 .article1 {
@@ -53,13 +54,11 @@
 .article2 {
     grid-area: a2;
     background: green;
-    overflow: scroll;
 }
 
 .article3 {
     grid-area: a3;
     background: blue;
-    width: 100vw;
 }
 
 .article4 {
@@ -113,7 +112,7 @@
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 13vh;
     background: lightpink;
@@ -131,10 +130,11 @@ nav {
     background-color: lightpink;
     align-items: center;
     width: 25%;
+    transition: all 1s;
 }
 
 .navActive {
-    transform: translate(100vh);
+    transform: translateY(100vh);
 }
 
 .navLinks li {
@@ -155,6 +155,7 @@ nav {
     background: rgb(223, 144, 70);
     margin: 5px;
     border-radius: 10%;
+    transition: all 0.3s;
 }
 
 .toggle .line1 {
@@ -167,6 +168,11 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.burger {
+    margin-right: 50px;
+    cursor: pointer;
 }
 
 
@@ -218,24 +224,3 @@ nav {
 
 
 
-
-
-.section1 {
-    padding: 10px;
-}
-
-.section2 {
-    padding: 10px;
-}
-
-.section3 {
-    padding: 10px;
-}
-
-.section4 {
-    padding: 10px;
-}
-
-.section5 {
-    padding: 10px;
-}
