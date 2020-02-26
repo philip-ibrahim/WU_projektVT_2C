@@ -10,23 +10,18 @@
     width: 100vw;
     grid-template-areas: 
     "he he he na"
-    "in in in in"
-    "a1 a1 a1 a1"
-    "a2 a2 a2 a2"
-    "a3 a3 a3 a3"
-    "a4 a4 a4 a4"
-    "a5 a5 a5 a5"
-    "a6 a6 a6 a6"
-    "a7 a7 a7 a7"
-    "a8 a8 a8 a8"
-    "a9 a9 a9 a9"
-    "aa aa aa aa"
+    "s1 s1 s2 s2"
+    "s1 s1 s2 s2"
+    "s3 s3 s4 s4"
+    "s3 s3 s4 s4"
+    "s5 s5 s5 s5"
+    "s5 s5 s5 s5"
     "fo fo fo fo"
+
     ;
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(13, 1fr);
-
+    grid-template-rows: repeat(8, 1fr);
 }
 
 
@@ -37,63 +32,34 @@
     background: blue;
 }
 
-.information {
-    grid-area: in;
-}
-
 .huvudinnehall {
         height: 100vh;
         width: 100vw;
 }
 
-.article1 {
-    grid-area: a1;
+.section1 {
+    grid-area: s1;
     background: pink;
 }
 
-.article2 {
-    grid-area: a2;
+.section2 {
+    grid-area: s2;
     background: green;
 }
 
-.article3 {
-    grid-area: a3;
+.section3 {
+    grid-area: s3;
     background: blue;
 }
 
-.article4 {
-    grid-area: a4;
+.section4 {
+    grid-area: s4;
     background: red;
 }
 
-.article5 {
-    grid-area: a5;
+.section5 {
+    grid-area: s5;
     background: purple;
-}
-
-.article6 {
-    grid-area: a6;
-    background: pink;
-}
-
-.article7 {
-    grid-area: a7;
-    background: blue;
-}
-
-.article8 {
-    grid-area: a8;
-    background: red;
-}
-
-.article9 {
-    grid-area: a9;
-    background: pink;
-}
-
-.article10 {
-    grid-area: aa;
-    background: green;
 }
 
 .footer {
@@ -111,6 +77,7 @@
 
 
 nav {
+    grid-area: na;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -184,34 +151,38 @@ nav {
 
 #teslamodels {
     display: block;
-    height: 20vh;
+    height: 15vh;
     width: auto;
     padding: 5px;
-    margin-left:20%
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #teslamodelx {
     display: block;
-    height: 20vh;
+    height: 15vh;
     width: auto;
     padding: 5px;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #teslamodel3 {
     display: block;
-    height: 20vh;
+    height: 15vh;
     width: auto;
     padding: 5px;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #teslamodely {
     display: block;
-    height: 20vh;
+    height: 15vh;
     width: auto;
     padding: 5px;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #teslaroadster {
@@ -219,7 +190,12 @@ nav {
     height: 20vh;
     width: auto;
     padding: 5px;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titel {
+    text-align: center;
 }
 
 
