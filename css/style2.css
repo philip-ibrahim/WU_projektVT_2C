@@ -11,26 +11,19 @@
     width: 100vw;
     grid-template-areas: 
     "s1 s1 s1"
-    "s1 s1 s1"
-    "s1 s1 s1"
-    "s1 s1 s1"
     "b1 b2 b3"
-    "te te te"
 
     ;
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background: skyblue;
 }
 
 .section1 {
     grid-area: s1;
-}
-
-#teslamodel3 {
-    height: auto;
-    width: 200px;
-    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .block1 {
@@ -38,7 +31,7 @@
     font-size: 20px;
     letter-spacing: 3px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -47,18 +40,168 @@
     font-size: 20px;
     letter-spacing: 3px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .block3 {
-    grid-area: b2;
+    grid-area: b3;
     font-size: 20px;
     letter-spacing: 3px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
-.text {
-    grid-area: te;
+a {
+    text-align: center;
+}
+
+#teslamodel3 {
+    height: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+#teslamodels {
+    height: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+#teslamodelx {
+    height: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+#teslamodely {
+    height: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+#teslaroadster {
+    height: auto;
+    width: 200px;
+    padding: 20px;
+}
+
+.longrange1 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.longrange2 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.longrange3 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.longrange4 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.performance1 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.performance2 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.performance3 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.performance4 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.extrarange1 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.extrarange2 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.extrarange3 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
+
+.extrarange4 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    background: red;
 }

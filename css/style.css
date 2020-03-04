@@ -28,8 +28,10 @@
 
 
 .header {
+    display: flex;
     grid-area: he;
     background: blue;
+    justify-content: center;
 }
 
 .huvudinnehall {
@@ -198,5 +200,11 @@ nav {
     text-align: center;
 }
 
+#teslaslogo {
+    position: relative;
+    display: block;
+    height: 80px;
+    width: auto;
+}
 
 
