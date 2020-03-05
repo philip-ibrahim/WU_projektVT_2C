@@ -22,6 +22,9 @@
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr);
+
+
+    background: lightcyan;
 }
 
 
@@ -30,43 +33,33 @@
 .header {
     display: flex;
     grid-area: he;
-    background: blue;
     justify-content: center;
-}
-
-.huvudinnehall {
-        height: 100vh;
-        width: 100vw;
+    background: lightpink;
 }
 
 .section1 {
     grid-area: s1;
-    background: pink;
 }
 
 .section2 {
     grid-area: s2;
-    background: green;
 }
 
 .section3 {
     grid-area: s3;
-    background: blue;
 }
 
 .section4 {
     grid-area: s4;
-    background: red;
 }
 
 .section5 {
     grid-area: s5;
-    background: purple;
 }
 
 .footer {
     grid-area: fo;
-    background: blue;
+    background: lightgreen;
 }
 
 
