@@ -56,35 +56,100 @@ a {
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
 #teslamodel3 {
     height: auto;
-    width: 200px;
+    width: 600px;
     padding: 20px;
 }
+
+
+
+@media screen and (max-width: 600px) {
+    #teslamodel3 {
+        height: auto;
+        width: 350px;
+        padding: 20px;
+    }
+}
+
+
 
 #teslamodels {
     height: auto;
-    width: 200px;
+    width: 600px;
     padding: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    #teslamodels {
+        height: auto;
+        width: 350px;
+        padding: 20px;
+    }
+}  
+
+
 
 #teslamodelx {
     height: auto;
-    width: 200px;
+    width: 600px;
     padding: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    #teslamodelx {
+        height: auto;
+        width: 350px;
+        padding: 20px;
+    }
+}
+
+
 
 #teslamodely {
     height: auto;
-    width: 200px;
+    width: 600px;
     padding: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    #teslamodely {
+        height: auto;
+        width: 350px;
+        padding: 20px;
+    }
+}
+
+
+
 #teslaroadster {
     height: auto;
-    width: 200px;
+    width: 600px;
     padding: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    #teslaroadster {
+        height: auto;
+        width: 350px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
 
 .longrange1 {
     display: flex;
@@ -205,3 +270,26 @@ a {
     align-items: center;
     background: red;
 }
+
+
+
+
+
+.Gridwrapper3 {
+    height: 100%;
+    width: 100%;
+    background: skyblue;
+}
+
+li {
+    margin: 4px;
+}
+
+ul {
+    margin: 30px;
+}
+
+h2 {
+    margin: 7px;
+}
+

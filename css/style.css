@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+
+
 .Gridwrapper {
     display: grid;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     grid-template-areas: 
-    "he he he na"
+    "he na na na"
     "s1 s1 s2 s2"
     "s1 s1 s2 s2"
     "s3 s3 s4 s4"
@@ -27,24 +29,18 @@
     background: lightcyan;
 }
 
-@media screen and (max-width: 600px) {
-    .Gridwrapper {
-        grid-template-areas:
-        "he he na"
-        "s1 s1 s1"
-        "s2 s2 s2"
-        "s3 s3 s3"
-        "s4 s4 s4"
-        "s5 s5 s5"
-        "fo fo fo"
-        ;
 
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 200px 200px 200px 200px 200px 60px;
-    }
+.navLinks {
+    grid-area: na;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightpink;
+    position: static;
+    font-size: 25px;
+    list-style-type: none;
+    height: 100px;
 }
-
-
 
 .header {
     display: flex;
@@ -98,71 +94,9 @@
 
 
 
-nav {
-    grid-area: na;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 1fr;
-    background: lightpink;
-    font-family: sans-serif;
-}
 
-.navLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    right: 0px;
-    height: 90vh;
-    top: -90vh;
-    background-color: lightpink;
-    align-items: center;
-    width: 2fr;
-    transition: all 1s;
-}
 
-.navActive {
-    transform: translateY(100vh);
-}
 
-.navLinks li {
-    list-style: none;
-}
-
-.navLinks a {
-    color: rgb(223, 144, 70);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background: rgb(223, 144, 70);
-    margin: 5px;
-    border-radius: 10%;
-    transition: all 0.3s;
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.burger {
-    margin-right: 50px;
-    cursor: pointer;
-}
 
 
 
@@ -192,37 +126,12 @@ nav {
     padding: 5px;
 }
 
-@media screen and (max-width: 600px) {
-#teslamodels {
-    display: block;
-    height: 150px;
-    width: auto;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    }
-}
-
 
 #text_to_s {
     position: relative;
     display: block;
     font-size: 20px;
 }
-
-@media screen and (max-width: 600px) {
-    #text_to_s {
-        position: relative;
-        display: block;
-        font-size: 15px;
-    }
-}
-
-
-
-
-
-
 
 
 #teslamodelx {
@@ -233,34 +142,12 @@ nav {
     padding: 5px;
 }
 
-@media screen and (max-width: 600px) {
-    #teslamodelx {
-        float: left;
-        display: block;
-        height: 150px;
-        width: auto;
-        padding: 5px;
-    }
-}
 
 #text_to_x {
     position: relative;
     display: block;
     font-size: 20px;
 }
-
-@media screen and (max-width: 600px) {
-    #text_to_x {
-        position: relative;
-        display: block;
-        font-size: 15px;
-    }
-}
-
-
-
-
-
 
 
 #teslamodel3 {
@@ -271,33 +158,12 @@ nav {
     padding: 5px;
 }
 
-@media screen and (max-width: 600px) {
-    #teslamodel3 {
-        float: left;
-        display: block;
-        height: 150px;
-        width: auto;
-        padding: 5px;
-    }
-}    
 
 #text_to_3 {
     position: relative;
     display: block;
     font-size: 20px;
 }
-
-@media screen and (max-width: 600px) {
-    #text_to_3 {
-        position: relative;
-        display: block;
-        font-size: 15px;
-    }
-}
-
-
-
-
 
 
 #teslamodely {
@@ -309,34 +175,11 @@ nav {
 }
 
 
-@media screen and (max-width: 600px) {
-    #teslamodely {
-        float: left;
-        display: block;
-        height: 150px;
-        width: auto;
-        padding: 5px;
-    }
-}
-
 #text_to_y {
     position: relative;
     display: block;
     font-size: 20px;
 }
-
-@media screen and (max-width: 600px) {
-    #text_to_y {
-        position: relative;
-        display: block;
-        font-size: 15px;
-    }
-}
-
-
-
-
-
 
 #teslaroadster {
     float: left;
@@ -346,15 +189,6 @@ nav {
     padding: 5px;
 }
 
-@media screen and (max-width: 600px) {
-    #teslaroadster {
-        float: left;
-        display: block;
-        height: 150px;
-        width: auto;
-        padding: 5px;
-    }
-}
 
 #teslaroadster2 {
     float: left;
@@ -364,42 +198,12 @@ nav {
     padding: 5px;
 }
 
-@media screen and (max-width: 600px) {
-    #teslaroadster2 {
-        float: left;
-        display: block;
-        height: 150px;
-        width: auto;
-        padding: 5px;
-    }
-}
 
 #text_to_roadster {
     position: relative;
     display: block;
     font-size: 20px;
 }
-
-@media screen and (max-width: 600px) {
-    #text_to_roadster {
-        position: relative;
-        display: block;
-        font-size: 15px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #titel {
@@ -414,11 +218,249 @@ nav {
     margin: 20px;
 }
 
+#footer_text {
+    text-align: center;
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
-    #teslaslogo {
-        position: relative;
-        display: block;
-        height: 60px;
-        width: auto;
+
+    .Gridwrapper {
+        grid-template-areas:
+        "he he nv"
+        "s1 s1 s1"
+        "s2 s2 s2"
+        "s3 s3 s3"
+        "s4 s4 s4"
+        "s5 s5 s5"
+        "fo fo fo"
+        ;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 200px 200px 200px 200px 200px 60px;
     }
+
+
+    #teslamodels {
+        display: block;
+        height: 150px;
+        width: auto;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+
+        #text_to_s {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslamodelx {
+            float: left;
+            display: block;
+            height: 150px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+
+        #text_to_x {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslamodel3 {
+            float: left;
+            display: block;
+            height: 150px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #text_to_3 {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslamodely {
+            float: left;
+            display: block;
+            height: 150px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #text_to_y {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslaroadster {
+            float: left;
+            display: block;
+            height: 150px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #teslaroadster2 {
+            float: left;
+            display: block;
+            height: 150px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #text_to_roadster {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslaslogo {
+            position: relative;
+            display: block;
+            height: 60px;
+            width: auto;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        nav {
+            grid-area: nv;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 1fr;
+            background: lightpink;
+            font-family: sans-serif;
+        }
+        
+        .navLinks {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: absolute;
+            right: 0px;
+            height: 90vh;
+            top: -90vh;
+            background-color: lightpink;
+            align-items: center;
+            width: 2fr;
+            transition: all 1s;
+            z-index: 1;
+        }
+        
+        .navActive {
+            transform: translateY(100vh);
+        }
+        
+        .navLinks li {
+            list-style: none;
+        }
+        
+        .navLinks a {
+            color: rgb(223, 144, 70);
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background: rgb(223, 144, 70);
+            margin: 5px;
+            border-radius: 10%;
+            transition: all 0.3s;
+        }
+        
+        .toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .toggle .line2 {
+            opacity: 0;
+        }
+        
+        .toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        
+        .burger {
+            margin-right: 50px;
+            cursor: pointer;
+        }
+
+
+
+
 }
