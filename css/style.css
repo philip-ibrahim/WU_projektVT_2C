@@ -11,7 +11,7 @@
     height: 100%;
     width: 100%;
     grid-template-areas: 
-    "he na na na"
+    "he he he na"
     "s1 s1 s2 s2"
     "s1 s1 s2 s2"
     "s3 s3 s4 s4"
@@ -26,11 +26,14 @@
     grid-template-rows: 100px 200px 200px 200px 200px 200px 200px 80px;
 
 
+
+
+
     background: lightcyan;
 }
 
 
-.navLinks {
+.navigation {
     grid-area: na;
     display: flex;
     justify-content: space-around;
@@ -39,7 +42,6 @@
     position: static;
     font-size: 25px;
     list-style-type: none;
-    height: 100px;
 }
 
 .header {
@@ -81,13 +83,9 @@
 
 .footer {
     grid-area: fo;
-    background: lightgreen;
+    background: lightpink;
+    opacity: 0.8;
 }
-
-
-
-
-
 
 
 
@@ -238,6 +236,211 @@
 
 
 
+nav {
+    grid-area: na;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1fr;
+    background: lightpink;
+    font-family: sans-serif;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: lightpink;
+    align-items: center;
+    width: 2fr;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.navActive {
+    transform: translateY(100vh);
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    color: rgb(223, 144, 70);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: rgb(223, 144, 70);
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.3s;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.burger {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+
+    .Gridwrapper {
+        grid-template-areas:
+        "he he he na"
+        "s1 s1 s2 s2"
+        "s3 s3 s4 s4"
+        "s5 s5 s5 s5"
+        "fo fo fo fo"
+        ;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    }
+
+    
+    #teslamodels {
+        display: block;
+        height: 170px;
+        width: auto;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+
+        #text_to_s {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslamodelx {
+            float: left;
+            display: block;
+            height: 170px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+
+        #text_to_x {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslamodel3 {
+            float: left;
+            display: block;
+            height: 170px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #text_to_3 {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslamodely {
+            float: left;
+            display: block;
+            height: 170px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #text_to_y {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslaroadster {
+            float: left;
+            display: block;
+            height: 170px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #teslaroadster2 {
+            float: left;
+            display: block;
+            height: 170px;
+            width: auto;
+            padding: 5px;
+        }
+
+
+        #text_to_roadster {
+            position: relative;
+            display: block;
+            font-size: 15px;
+        }
+
+
+        #teslaslogo {
+            position: relative;
+            display: block;
+            height: 40px;
+            width: auto;
+        }
+    }
+
+
+
 
 
 
@@ -266,7 +469,7 @@
 
     .Gridwrapper {
         grid-template-areas:
-        "he he nv"
+        "he he na"
         "s1 s1 s1"
         "s2 s2 s2"
         "s3 s3 s3"
@@ -382,85 +585,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-        nav {
-            grid-area: nv;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 1fr;
-            background: lightpink;
-            font-family: sans-serif;
-        }
-        
-        .navLinks {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            position: absolute;
-            right: 0px;
-            height: 90vh;
-            top: -90vh;
-            background-color: lightpink;
-            align-items: center;
-            width: 2fr;
-            transition: all 1s;
-            z-index: 1;
-        }
-        
-        .navActive {
-            transform: translateY(100vh);
-        }
-        
-        .navLinks li {
-            list-style: none;
-        }
-        
-        .navLinks a {
-            color: rgb(223, 144, 70);
-            text-decoration: none;
-            letter-spacing: 3px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        
-        .burger div {
-            width: 25px;
-            height: 3px;
-            background: rgb(223, 144, 70);
-            margin: 5px;
-            border-radius: 10%;
-            transition: all 0.3s;
-        }
-        
-        .toggle .line1 {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-        
-        .toggle .line2 {
-            opacity: 0;
-        }
-        
-        .toggle .line3 {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-        
-        .burger {
-            margin-right: 50px;
-            cursor: pointer;
-        }
-
-
-
-
 }
+
+
